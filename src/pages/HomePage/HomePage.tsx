@@ -18,45 +18,31 @@ const HomePage: React.FC = () => {
   }, []);
 
   const handleOnValueInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const trimmedValue = e.target.value.trim();
-    if (trimmedValue === "") {
-      return;
-    }
-
-    setNewPlaylistName(trimmedValue);
+    setNewPlaylistName(e.target.value);
   };
 
   const handleCreatePlaylist = (e: any) => {
     e.preventDefault();
 
-    console.log(1);
-    if (newPlaylistName === "") {
+    if (newPlaylistName?.trim() === "") {
+      setNewPlaylistName("");
       return;
     }
 
-    console.log(2);
     const isPlaylistExist = playlists.some(
-      (playlist) => playlist.toLowerCase() === newPlaylistName.toLowerCase()
+      (playlist) => playlist?.trim()?.toLowerCase() === newPlaylistName?.trim()?.toLowerCase()
     );
 
-    console.log(3);
     if (isPlaylistExist) {
-      console.log(4);
       setErrorMessage("Playlist already exists");
       return;
     }
 
-    console.log(5);
-
     setErrorMessage("");
 
-    console.log(6);
     const newPlaylists = [...playlists, newPlaylistName?.trim()];
-    console.log(7);
     setPlaylists(newPlaylists);
-    console.log(8);
     localStorage.setItem("playlists", JSON.stringify(newPlaylists));
-    console.log(9);
     setNewPlaylistName("");
   };
 
