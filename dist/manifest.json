@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "name": "PlayMixTube",
+  "description": "Welcome to PlayMixTube! Your go-to platform for crafting the perfect playlists from your favorite YouTube videos. Seamlessly blend and organize your top picks into personalized mixes that suit every mood and occasion. Say hello to a whole new level of playlist perfection with PlayMixTube!",
+  "action": {
+    "default_popup": "js/index.html",
+    "default_title": "PlayMixTube",
+    "default_icon": {
+      "16": "images/playmixtube-logo-main.png",
+      "32": "images/playmixtube-logo-main.png",
+      "48": "images/playmixtube-logo-main.png",
+      "128": "images/playmixtube-logo-main.png"
+    }
+  }
+}

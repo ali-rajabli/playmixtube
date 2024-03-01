@@ -1,1 +1,36 @@
-/*  */
+html {
+  background: #ff7878;
+  border-radius: 6px;
+}
+
+body {
+  padding: 8px;
+}
+
+@font-face {
+  font-family: "KodeMono Regular";
+  src: local("KodeMono-Regular"),
+    url("../public/fonts/Kode_Mono/static/KodeMono-Regular.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "KodeMono Bold";
+  src: local("KodeMono-Bold"),
+    url("../public/fonts/Kode_Mono/static/KodeMono-Bold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "KodeMono Medium";
+  src: local("KodeMono-Medium"),
+    url("../public/fonts/Kode_Mono/static/KodeMono-Medium.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "KodeMono SemiBold";
+  src: local("KodeMono-SemiBold"),
+    url("../public/fonts/Kode_Mono/static/KodeMono-SemiBold.ttf")
+      format("truetype");
+}

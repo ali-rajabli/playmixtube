@@ -1,10 +1,11 @@
 .App {
-  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #ff7878;
+  width: 400px;
   text-align: center;
+  font-family: "KodeMono Regular", monospace;
 }
 
-.container {
-  width: 15rem;
-  height: 15rem;
-  background-color: green;
+* {
+  outline: 0 !important;
 }
